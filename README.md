@@ -51,8 +51,8 @@ A Spring Boot-based Task Management System with JWT authentication, CRUD operati
 
  4.API Endpoints:
  
-  Register: POST /auth/register
-  Login: POST /auth/login
+  Register: POST /api/register
+  Login: POST /api/login
   Create Task: POST /tasks
   Get Tasks (Paginated & Filtered): GET /tasks?page=0&size=5&priority=high&status=pending
   Update Task: PUT /tasks/{id}
@@ -68,10 +68,10 @@ A Spring Boot-based Task Management System with JWT authentication, CRUD operati
        }``
    
    ## Login and Get Token:
-    URL: POST http://localhost:8080/auth/login
+    ``URL: POST http://localhost:8080/register``
     Response contains token, copy it for authentication.
     Create a Task (Use Token in Headers):
-    URL: POST http://localhost:8080/tasks
+    ``URL: POST http://localhost:8080/api/tasks``
    
    ## Authorization: Bearer YOUR_JWT_TOKEN
    
@@ -156,5 +156,5 @@ Run with:
 │   │-- TaskControllerTest.java  --> Unit tests for tasks
 │-- pom.xml  --> Maven dependencies
 
-
+## You can simply use the intellij IDE and then can run the project by cloning the project in it and just hit the run button of the main function.
 
